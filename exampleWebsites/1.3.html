@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+  </head>
+  <body onload="onLoad()" onBeforeUnload="onUnload()">
+  	<p> News </p>
+  	<img src="http://ichef.bbci.co.uk/images/ic/336x189/legacy/episode/b01r3pb9.jpg" /> 
+  	<br/>
+  	<a href="../index.html"> back </a>
+
+  	<!--- js -->
+  	<script>
+  	var currentUser;
+  	var jManager;
+  	var timer;
+
+  	var onLoad = function()
+  	{
+  		jManager = new JourneyManager();
+  		var stracturedUser = jManager.loadUser();
+  		currentUser = new User();
+  		currentUser.unstructurize(stracturedUser);
+  		console.log("user loaded :");
+  		currentUser.print();
+
+  		//setup ltimer
+  		var d = new Date();
+		  timer = d.getTime();
+  	}
+
+  	var onUnload = function()
+  	{
+  		//get exit time
+  		var d = new Date();
+		  var n = d.getTime();
+
+  		//add new step
+  		var type = "Website";
+      var tags = ["pope","news"];
+      var time = Math.floor((n-timer)/1000);
+      var content = new Object();
+      content.thumbnail = "http://ichef.bbci.co.uk/images/ic/336x189/legacy/episode/b01r3pb9.jpg";
+      content.headline = "New Pope";
+      content.teaser = "BBC - New Pope hasa been chosen";
+
+      currentUser.addNewStep(type , tags, time, content);
+  		jManager.saveUser(currentUser);
+  		console.log("unloaded");
+  	}
+  	</script>
+
+  	<script src="../js/journeyManager.js"></script>
+  	<script src="../js/journey.js"></script>
+  	<script src="../js/User.js"></script>
+  	<script src="../js/Walk.js"></script>
+  	<script src="../js/Step.js"></script>
+
+  </body>
+ </html>
