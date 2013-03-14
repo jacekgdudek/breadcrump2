@@ -1,0 +1,186 @@
+
+/* Style reset */
+
+h1 {
+font-weight: normal;
+padding: 20px 0px;
+}
+
+h2 {
+font-weight: normal;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-bottom: 1px solid #d4d4d4 ;
+}
+
+
+/* Navigation */
+
+
+.navbar-inverse .navbar-inner, .navbar-inner  {
+background-color: white;
+background-image: none;
+}
+
+.navbar-static-top .navbar-inner {
+box-shadow: none;
+}
+
+.navbar-static-top .nav>li {
+border-right: 1px solid #d4d4d4 
+}
+
+.navbar-static-top .nav #wil .caret {
+margin-left: 60px;
+}
+
+input[type="search"] {
+background-color: #e4e4e4;
+border-color: #e4e4e4;
+border-radius: 1px;
+width:180px;
+}
+
+/* Header */
+
+.banner {
+  background-color: #C9D0DA;
+min-height: 110px;
+margin-bottom: 20px;
+margin-top: -5px
+}
+
+.page-header {
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: none;
+}
+
+.binder-buttons {
+  margin-top: 45px;
+}
+
+
+
+/* Sub navigation */
+
+.btn-toolbar {
+margin: 0px;
+float: right
+}
+
+
+
+
+/* styles */
+
+.thumbnail {
+border: none;
+padding: 0px;
+box-shadow: none;
+}
+
+.binder {
+border: none;
+padding: 10px;
+background-color: #dff0d8;
+}
+
+
+li.small {
+  border: 1px solid #d4d4d4 ;
+}
+
+li.small p{
+font-size:1em;
+padding: 0px 10px;
+line-height: 1em
+}
+
+li.small h4{
+padding: 0px 10px;
+}
+
+.related {display: inline;}
+
+table th {background-color: }
+
+
+.more {background-color: #e4e4e4; text-align: center; padding: 0px 20px; margin-bottom: 0px; }
+
+
+.related {margin-top: -40px;}
+
+.timeline {margin-top: 70px;}
+
+
+
+
+
+/* Footer */
+footer {
+min-height: 100px;
+background-color: #e4e4e4;
+padding:30px 0px;
+margin-top: 10px;
+}
+
+
+
+
+/* Desktop styles */
+
+
+@media (min-width: 1200px) {
+
+
+ul.thumbnails {
+margin-left: 15px;
+}
+
+.thumbnails>li {
+margin-left: 16px;
+}
+  
+.span2 {
+width: 180px;
+}  
+
+}
+
+
+/* Mobile styles */
+
+
+@media (max-width: 767px) {
+
+.banner {
+  background-color: #C9D0DA;
+height: 150px;
+margin-bottom: 30px;
+margin-top: 0px
+}
+
+h1 {
+font-weight: normal;
+padding: 20px 10px;
+}
+
+.binder-buttons {
+margin-top: -36px;
+}
+
+}
+
+
+
+
+
+
+
+
+
